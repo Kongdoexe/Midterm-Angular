@@ -1,0 +1,25 @@
+  <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%;">
+    <mat-card class="login-card">
+      <mat-card-header>
+        <div>
+          <mat-card-title style="text-align: center; width: 280px;"><img src="../../../assets/Images/logo.png"></mat-card-title>
+          <br>
+          <mat-card-subtitle style="text-align: center; font-size: 25px;">ระบบพนักงาน</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <br>
+      <mat-form-field class="form" appearance="outline">
+        <mat-label>อีเมล์</mat-label>
+        <input matInput #email>
+      </mat-form-field>
+      <mat-form-field class="form" appearance="outline">
+        <mat-label>รหัสผ่าน</mat-label>
+        <input matInput #pass type="password" >
+      </mat-form-field>
+      <mat-card-actions style="display: flex; flex-direction: column; justify-content: center;">
+        <button mat-raised-button color="warn" routerLink="" style="width: 260px; height: 50px;" (click)="Check(email, pass)"><mat-icon class="mat-18">login</mat-icon>Login</button>
+        <br>
+        <span>Copyright © 2024 Aj.M CS-MSU.</span>
+      </mat-card-actions>
+    </mat-card>
+  </div>

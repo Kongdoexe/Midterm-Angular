@@ -1,0 +1,41 @@
+<div>
+  <div style="display: flex; flex-direction: row; justify-content: space-between;" class="continer-navbar">
+    <div style="display: flex; flex-direction: row;">
+      <img src="../../../assets/Images/logo.png">
+
+      <div style="text-align: center; margin-left: 40px; margin-top: 2%;">
+        <h1>Café Amazon &#64; CS-MSU</h1>
+        <h3>{{User.name}} ({{role}})</h3>
+      </div>
+    </div>
+
+    <div style="margin-top: 2%;">
+      <button mat-raised-button color="warn" (click)="logout()"><mat-icon class="mat-18">login</mat-icon>ออกจากระบบ</button>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div style="display: flex; flex-direction: row; align-items: center;">
+      <h1><a routerLink="#" (click)="sendParam()">หน้าแรก</a> / เมนู{{type}}</h1>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center; max-width: 700px;">
+      <ng-container *ngFor="let lm of Product">
+        <div style="display: grid; grid-template-columns: 250px auto auto; align-items: center; margin-bottom: 20px;">
+          <img src="../../../../assets/Images/{{lm.Image}}" width="250px" style="margin-bottom: 10px;">
+          <div style="display: flex; flex-direction: column; justify-content: center;">
+            <h3>{{lm.ProductName}}</h3>
+            <span style="width: 400px; font-size: 20px; color: rgb(57,115,115);">{{lm.Description}}</span>
+          </div>
+          <div class="Button-Help" style="margin-top: 200px;">
+            <mat-icon class="Button-Help" routerLink="#" (click)="0">shopping_cart</mat-icon>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+
+  </div>
+
+
+</div>

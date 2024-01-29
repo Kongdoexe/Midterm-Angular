@@ -1,0 +1,20 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "email": "Kongnapa@gmail.com",
+      "password": 1234,
+      "name": "ก้องนภา",
+      "lastname": "บุตตะโชติ",
+      "Role": "sale"
+    },
+    {
+      "id": 2,
+      "email": "Sasss@gmail.com",
+      "password": 1234,
+      "name": "อัลเลอะ",
+      "lastname": "มหาบุญ",
+      "Role": "Manager"
+    }
+  ]
+}

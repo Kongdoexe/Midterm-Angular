@@ -1,0 +1,17 @@
+.form{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.login-card {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-card mat-card-title,
+.login-card mat-card-subtitle,
+.login-card .form,
+.login-card mat-card-actions {
+  background: none;
+  color: black;
+}

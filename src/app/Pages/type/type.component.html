@@ -1,0 +1,29 @@
+<div>
+  <div style="display: flex; flex-direction: row; justify-content: space-between;" class="continer-navbar">
+    <div style="display: flex; flex-direction: row;">
+      <img src="../../../assets/Images/logo.png">
+
+      <div style="text-align: center; margin-left: 40px; margin-top: 2%;">
+        <h1>Café Amazon &#64; CS-MSU</h1>
+        <h3>{{User.name}} ({{role}})</h3>
+      </div>
+    </div>
+
+    <div style="margin-top: 2%;">
+      <button mat-raised-button color="warn" (click)="logout()"><mat-icon class="mat-18">login</mat-icon>ออกจากระบบ</button>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center; height: 40vh;">
+    <img src="../../../assets/Images/products-coffee.png">
+  </div>
+
+  <div class="container-menu">
+    <div style="display: flex; justify-content: space-between;">
+      <button (click)="sendParam(0)"><img src="../../../assets/Images/icon_hot.png">เมนูร้อน</button>
+      <button (click)="sendParam(1)"><img src="../../../assets/Images/icon_cool.png">เมนูเย็น</button>
+      <button (click)="sendParam(2)"><img src="../../../assets/Images/icon_smooty.png">เมนูปั่น</button>
+    </div>
+  </div>
+
+</div>
