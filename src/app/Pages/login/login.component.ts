@@ -6,11 +6,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import {
-  Route,
   Router,
   RouterModule,
   RouterOutlet,
-  Routes,
 } from '@angular/router';
 import User from '../../../assets/User.json';
 
@@ -52,6 +50,8 @@ export class LoginComponent {
     this.email = this.Users.User.filter(
       (user) => emaila.value == user.email && user.password == +passa.value
     );
+    console.log(this.email);
+
 
     if (this.email.length > 0) {
       this.id = this.email[0].id;

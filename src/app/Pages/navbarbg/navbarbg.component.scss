@@ -1,6 +1,8 @@
-mat-toolbar{
-  background: url(../../../assets/Images/e4a8790137dd4dadac10e704e3d92700.png) no-repeat;
-  width: 100%;
-  height: 40%;
+img {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100vw 400px;
+  background-position-y: -100px;
+  background-attachment: fixed;
   background-size: cover;
 }

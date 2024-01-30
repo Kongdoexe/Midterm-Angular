@@ -37,10 +37,14 @@ $Midterm-Angular-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body {
+  background-image: url(assets/Images/bg.jpeg);
+  background-size: cover; /* หรือ background-size: 100% 100%; */
+  background-position: center center; /* หรือ background-position: 50% 50%; */
+  width: 100%;
+  height: auto; /* ทำให้ body มีความสูงเต็มหน้าจอ */
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background: url(assets/Images/bg.jpeg) no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  overflow-x: hidden
 }
 
 @import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css';
